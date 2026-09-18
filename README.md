@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Payments Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based blog website exploring payments, fintech, and cross-border payment systems.
 
-## Available Scripts
+## Live Project
 
-In the project directory, you can run:
+[View the live website](https://payments-blog.vercel.app/)
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is a frontend website built with React to explore how modern payment systems work and how money moves across borders.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The website combines educational content with interactive visual elements, including an animated cross-border payment flow and an interactive 3D globe showing global payment routes.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript
+- HTML
+- CSS
+- React Globe GL
+- CSS animations
+- Git & GitHub
+- Vercel
 
-### `npm run build`
+## What I Learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project helped me develop a better understanding of building a React application from the ground up.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Understanding how React components work.
+- Breaking a website into reusable components such as `Navbar`, `Footer`, `WorldGlobe`, and `PaymentAnimation`.
+- Understanding how the main `App` component brings different parts of the website together.
+- Organising a React project into separate, reusable components.
 
-### `npm run eject`
+### CSS & Layout
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Using **Flexbox** for layouts such as navigation and the hero section.
+- Using **CSS Grid** for responsive card layouts.
+- Understanding the difference between `margin`, `padding`, and `gap`.
+- Using CSS variables to create a consistent colour palette.
+- Building responsive layouts using media queries.
+- Using `min-height` and flexible layouts instead of relying on fixed heights.
+- Creating hover effects, transitions, and animations.
+- Creating animations using CSS `@keyframes`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### UI & Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Creating a consistent visual style across different sections of a website.
+- Using colour intentionally to distinguish primary actions, accents, backgrounds, and text.
+- Designing a dark fintech-inspired hero section with an interactive globe.
+- Creating an animated visual explanation of a cross-border payment flow.
+- Thinking about how complex financial concepts can be explained through simple visualisations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Payments & Fintech
 
-## Learn More
+While building the website, I also learned more about the basic flow of a cross-border payment and some of the messaging involved.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- A **debtor** instructs their bank to make a payment.
+- A **pain.001** message can be used for the customer-to-bank payment instruction.
+- The sending bank processes the instruction and initiates the payment.
+- A **pacs.008** message can be used for the interbank customer credit transfer.
+- The receiving bank processes the payment and makes the funds available to the **creditor**.
 
-### Code Splitting
+The animation in the website is a simplified visual representation of this process rather than a complete representation of every step involved in a real cross-border payment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deployment & Version Control
 
-### Analyzing the Bundle Size
+I also learned how to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Use Git to track changes.
+- Push a React project to GitHub.
+- Connect a GitHub repository to Vercel.
+- Deploy a React application to the web.
+- Automatically redeploy the website when changes are pushed to GitHub.
 
-### Making a Progressive Web App
+## Running the Project Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clone the repository and install the dependencies:
 
-### Advanced Configuration
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start the development server:
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application will run locally at:
 
-### `npm run build` fails to minify
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Creating a Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The production files will be generated in the `build` folder.
+
+## Project Goals
+
+The main goals of this project were to:
+
+1. Build a React website from scratch.
+2. Improve my understanding of component-based development.
+3. Practise responsive CSS and modern layouts.
+4. Learn how to create animations without relying on video.
+5. Explore how financial concepts can be explained visually.
+6. Deploy a React application using GitHub and Vercel.
+
+## Future Improvements
+
+Some ideas for future development include:
+
+- Adding real blog posts.
+- Adding individual pages for each article.
+- Adding a blog creation form.
+- Making the payment animation interactive.
+- Adding more payment message types.
+- Improving accessibility.
+- Adding more detailed explanations of payment systems.
+- Adding a database or backend for storing blog posts.
+
+## Learning Resources
+
+- [React Documentation](https://react.dev/)
+- [Create React App](https://create-react-app.dev/)
+- [Vercel Documentation](https://vercel.com/docs)
+- [GitHub Documentation](https://docs.github.com/)
